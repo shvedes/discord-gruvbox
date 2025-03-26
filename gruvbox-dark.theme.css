@@ -2,37 +2,46 @@
  * @name Gruvbox Dark
  * @description Gruvbox Dark for Discord (new UI update)
  * @author shved
- * @version 0.0.1
+ * @version 0.1.0
 */
 
 * {
 
-	--yellow-dark:        #d79921;
-	--yellow-light:       #fabd2f;
-	--yellow-dark-custom: #bc861d;
+	--yellow-dark:        rgba(215, 153, 33, 1);
+	--yellow-light:       rgba(250, 189, 47, 1);
+	--yellow-dark-custom: rgba(188, 134, 29, 1);
 
-	--red-dark:         #cc241d;
-	--red-light:		#fb4934;
+	--red-dark:           rgba(204, 36, 29, 1);
+	--red-light:	 	  rgba(251, 73, 52, 1);
 
-	--background:		#282828;
-	--background-hard:	#1d2021;
+	--purple-dark:        rgba(177, 98, 134, 1);
+	--purple-light:       rgba(211, 134, 155, 1);
 
-	--background-soft:  #32302f;
+	--green-dark:        rgba(152, 151, 26, 1);
+	--green-light:       rgba(184, 187, 38, 1);
 
-	--background-1:     #3c3836;
-	--background-2:     #504945;
+	--background:		rgba(40, 40, 40, 1);
+	--background-hard:	rgba(29, 32, 33, 1);
+
+	--background-soft:  rgba(50, 48, 47, 1);
+
+	--background-1:     rgba(60, 56, 54, 1);
+	--background-2:     rgba(80, 73, 69, 1);
+	--background-3:     rgba(102, 92, 84, 1);
 	
 	--accent:           var(--yellow-dark);
 	--accent-hover:     var(--yellow-dark-custom);
 
 	--voice-room-animation-color:  var(--accent);
-	--voice-room-animation-dimmed: #51390c;
+	--voice-room-animation-dimmed: rgba(81, 57, 12, 1);
 
-	--foreground-hard:  #fbf1c7;
-	--foreground:       #ebdbb2;
-	--foreground-1:     #d5c4a1;
-	--foreground-2:     #bdae93;
-	--foreground-3:     #a89984;
+	--foreground-hard:  rgba(251, 241, 199, 1);
+	--foreground:       rgba(235, 219, 178, 1);
+	--foreground-1:     rgba(213, 196, 161, 1);
+	--foreground-2:     rgba(189, 174, 147, 1);
+	--foreground-3:     rgba(168, 153, 132, 1);
+
+	/* ######################################## */
 
 	--foreground-inverted: var(--background);
 	--foreground-muted:    var(--foreground-3);
@@ -41,14 +50,50 @@
 
 	--icon-color: var(--foreground-2);
 	--icon-color-muted: var(--foreground-3);
+	--icon-color-inverted: var(--background);
+
+	--link-color: var(--purple-dark);
+
+	--tab-active-background: var(--background-2);
+	--tab-active-background-hover: var(--background-1);
+
+	/* ######################################## */
 
 	/* It is not primary actually */
 	/* Friends > Active Now background */
-	--background-primary: var(--background) !important; 
+	--background-primary: var(--background-hard) !important; 
+
+	/* Members */
+	--custom-channel-members-bg: var(--background-hard) !important;
+	/* Channels */
+	--background-base-lowest: var(--background-hard) !important;
+	/* Servers */
+	--bg-base-tertiary: var(--background-hard) !important;
+
+	/* Left bottom active call */
+	--background-base-low: var(--background) !important;
+	/* Its header */
+	--background-surface-high: var(--background-1) !important;
+
+	/* Chat */
+	--background-base-lower: var(--background) !important;
+
+	/* Pop-up windows */
+	--background-floating: var(--background-1) !important;
+	/* Self-explanatory */
+	/* --background-mentioned: var(--re) !important; */
+		/* --background-mentioned: var(--re) !important; */
+	--mention-background: var(--background-3) !important;
+
+	/* Some borders */
+	--background-modifier-accent: var(--border) !important;
 
 	/* Some buttons background (but not hover) | AKA sign */
 	--background-secondary: var(--background-1) !important;
 	--background-tertiary:  var(--background-2) !important;
+
+	/* TBH i found this bg only in spotify controls plugin */
+	--background-secondary-alt: var(--background) !important;
 	
 	/* Self-explanatory */
 	--background-message-hover: var(--background-soft) !important;
@@ -57,10 +102,13 @@
 	--background-mentioned:       var(--background-1) !important;
 	--background-mentioned-hover: var(--background-2) !important;
 
+	--border-faint: var(--border) !important;
+
 	/* Some (!) icons */
 	--icon-primary:   var(--icon-color)       !important;
 	--icon-secondary: var(--icon-color)       !important;
 	--icon-muted:     var(--icon-color-muted) !important;
+	--channel-icon:   var(--icon-color)       !important;
 
 	/* Server > Members > Search */
 	--input-background:       var(--background-soft) !important;
@@ -85,11 +133,41 @@
 	--button-danger-background-hover:  var(--red-dark)  !important;
 	--button-filled-brand-border:      none             !important;
 
+	--button-filled-brand-background: var(--accent) !important;
+	--button-filled-brand-background-hover: var(--accent-hover) !important;
+	--white: var(--background) !important;
+
+	/* Modal windows */
+	--modal-background: var(--background-primary) !important;
+
 	--bg-brand: var(--accent) !important;
 
 	/* New messages */
 	--text-brand: var(--accent) !important;
 
+	/* Defalt chat text color */
+	--text-normal: var(--foreground) !important;
+	
+	/* Unread chat name */
+	--text-primary: var(--foreground-hard) !important;
+
+	/* Self-explanatory */
+	--text-secondary: var(--foreground-muted) !important;
+
+	/* Self-explanatory */
+	--text-muted: var(--foreground-muted) !important;
+
+	/* Default channel name color */
+	--channels-default: var(--foreground-muted) !important;
+
+	/* Self-explanatory */
+	--text-link: var(--link-color) !important;
+
+	/* Some form of accent color. Appears in clickable text (Remove phone number | Reveal phone number) */
+	--brand-360: var(--accent) !important;
+
+
+	--__header-bar-background: var(--background-hard) !important;
 }
 
 /* call container bg */
@@ -123,20 +201,125 @@
 }
 
 /* Active call top gradient */
-/* [class^=callContainer] [class^=gradientTop] { */
-/*   background-image: linear-gradient( */
-/*     rgba(146, 131, 116, 1), */
-/*     rgba(146, 131, 116, 0.9) 10%, */
-/*     rgba(146, 131, 116, 0.8) 20%, */
-/*     rgba(146, 131, 116, 0.7) 30%, */
-/*     rgba(146, 131, 116, 0.6) 40%, */
-/*     rgba(146, 131, 116, 0.5) 50%, */
-/*     rgba(146, 131, 116, 0.4) 60%, */
-/*     rgba(146, 131, 116, 0.3) 70%, */
-/*     rgba(146, 131, 116, 0.2) 80%, */
-/*     rgba(146, 131, 116, 0.1) 90%, */
-/*     rgba(146, 131, 116, 0.05) 95%, */
-/*     rgba(146, 131, 116, 0.02) 98%, */
-/*     transparent */
-/*   ); */
-/* } */
+[class^=callContainer] [class^=gradientTop] {
+  background-image: linear-gradient(
+    rgba(146, 131, 116, 1),
+    rgba(146, 131, 116, 0.9) 10%,
+    rgba(146, 131, 116, 0.8) 20%,
+    rgba(146, 131, 116, 0.7) 30%,
+    rgba(146, 131, 116, 0.6) 40%,
+    rgba(146, 131, 116, 0.5) 50%,
+    rgba(146, 131, 116, 0.4) 60%,
+    rgba(146, 131, 116, 0.3) 70%,
+    rgba(146, 131, 116, 0.2) 80%,
+    rgba(146, 131, 116, 0.1) 90%,
+    rgba(146, 131, 116, 0.05) 95%,
+    rgba(146, 131, 116, 0.02) 98%,
+    transparent
+  );
+}
+
+/*
+   When you are the only in the voice room,
+   sometimes discord will suggest you to invite
+   friends / start activity in the form of 
+   user's modal window. This will change its background
+*/
+[class^=callContainer] [class^=root] {
+  background-color: var(--background-hard) !important
+}
+
+/* Room preview animation */
+.gradientBackground__11664 {
+	background: var(--background-hard) !important
+}
+.backgroundDark__11664 {
+	background: var(--background-hard) !important
+}
+.foregroundRing__11664 {
+	background: var(--voice-room-animation-dimmed) !important
+}
+.foregroundBase__11664 {
+	background: var(--voice-room-animation-color) !important
+}
+
+/* ###### Active Call ###### */
+
+/* call container bg */
+[class^=callContainer],
+[class^=callContainer] [class^=scroller_] {
+  background-color: var(--background-hard);
+}
+
+/* Active call top and bottom gradient */
+[class^=callContainer] [class^=gradientTop],
+[class^=callContainer] [class^=gradientBottom] {
+  background-image: linear-gradient(
+    rgba(60, 56, 54, 0.7),
+    rgba(60, 56, 54, 0.5) 30%,
+    rgba(60, 56, 54, 0.3) 52.5%,
+    rgba(60, 56, 54, 0.07) 75%,
+    rgba(60, 56, 54, 0.06) 90%,
+    rgba(60, 56, 54, 0.04) 105%,
+    rgba(60, 56, 54, 0.02) 120%,
+    rgba(60, 56, 54, 0.01) 135%,
+    transparent
+  );
+}
+
+/* Remove annoying visible line for it */
+[class^=callContainer] [class*="container"] {
+  border-bottom: none !important;
+}
+
+/* If spotify controls plugin is enabled */
+#vc-spotify-player {
+	--vc-spotify-green: var(--green-dark) !important
+}
+
+/* Almost all icons */
+svg > path {
+	fill: var(--icon-color)
+}
+
+/* But fix main discord icon (friends section) low contrast */
+.wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8 svg > path {
+	fill: var(--icon-color-inverted) !important
+}
+
+/* Friends > Online button: fix text contrast */
+.visual-refresh .topPill_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
+	color: var(--foreground-inverted) !important
+}
+
+/* Friends, Nitro, Shop tabs text color | DMs text color */
+.name__20a53 {
+	color: var(--foreground-hard) !important
+}
+
+/* Some text colors */
+.menuItemLabel_af7fb7 {
+	color: var(--foreground) !important
+}
+
+/* Use custom background color for active tab (e.g. in the settings) */
+/* Reason: poor contrast with accent color */
+.visual-refresh .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
+	background-color: var(--tab-active-background) !important
+}
+
+/* And hover effect as well */
+.visual-refresh .side_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026) {
+	background-color: var(--tab-active-background-hover) !important
+}
+
+/* Friends > "Find or start a conversation" */
+:where(.visual-refresh) .lookFilled__201d5.colorPrimary__201d5 {
+	background-color: var(--background-soft) !important;
+	color: var(--foreground) !important
+}
+
+/* Friends > Search box */
+:where(.visual-refresh) .medium_a45028 .inner_a45028 {
+	background-color: var(--background-soft)
+}
