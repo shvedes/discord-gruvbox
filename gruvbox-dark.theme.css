@@ -49,6 +49,7 @@
 	--border: var(--background-2);
 
 	--icon-color: var(--foreground-2);
+	--icon-color-hover: var(--foreground-hard);
 	--icon-color-muted: var(--foreground-3);
 	--icon-color-inverted: var(--background);
 
@@ -168,6 +169,9 @@
 
 
 	--__header-bar-background: var(--background-hard) !important;
+
+	/* Message input box > emoji selector button color */
+	--interactive-normal: var(--icon-color) !important
 }
 
 /* call container bg */
@@ -307,9 +311,25 @@ svg > path {
 .visual-refresh .side_b3f026 .themed_b3f026.selected_b3f026.item_b3f026 {
 	background-color: var(--tab-active-background) !important
 }
-
 /* And hover effect as well */
 .visual-refresh .side_b3f026 .themed_b3f026.item_b3f026:hover:not(.disabled_b3f026) {
+	background-color: var(--tab-active-background-hover) !important
+}
+
+/* Friends > Friends activities: activity background */
+.visual-refresh .outer_bf1984 {
+	background-color: var(--background) !important
+}
+/* Friends > Friends activities: activity active channel background */
+.visual-refresh .section__00943  {
+	background-color: var(--background-soft) !important
+}
+
+/* Friends > active tab */
+:where(.visual-refresh) .interactiveSelected__972a0 {
+	background-color: var(--tab-active-background) !important
+}
+:where(.visual-refresh) .interactiveSelected__972a0:hover {
 	background-color: var(--tab-active-background-hover) !important
 }
 
@@ -319,7 +339,35 @@ svg > path {
 	color: var(--foreground) !important
 }
 
+/* Top to bottom */
 /* Friends > Search box */
-:where(.visual-refresh) .medium_a45028 .inner_a45028 {
+/* Message input box */
+:where(.visual-refresh) .medium_a45028 .inner_a45028,
+:where(.visual-refresh) .inner__74017 {
 	background-color: var(--background-soft)
+}
+
+
+/* Message input box > attachments button color */
+/* .visual-refresh .attachButton__0923f .attachButtonPlus__0923f { */
+.visual-refresh [class^=attachButton_] {
+	fill: var(--icon-color) !important
+}
+/* Message input box > other buttons */
+[class*=buttonWrapper_] svg {
+	color: var(--icon-color) !important
+}
+[class*=buttonWrapper_] svg:hover {
+	color: var(--icon-color-hover) !important
+}
+
+/* Some icons have unnecessary background colors */
+/* So, remove them */
+.theme-dark [class*=noItemsIcon_] {
+	background-color: transparent !important
+}
+
+/* Completely remove quests banner */
+.theme-dark .wrapper__0d616 {
+	display: none !important
 }
