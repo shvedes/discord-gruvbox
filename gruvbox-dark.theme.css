@@ -152,10 +152,14 @@
 	--button-secondary-background-disabled: var(--accent)              !important;
 	--button-secondary-text:                var(--foreground-inverted) !important;
                                             
-	--button-danger-background:        var (--red-light) !important;
+	--button-danger-background:        var(--red-light)  !important;
 	--button-danger-background-active: var(--red-light)  !important;
 	--button-danger-background-hover:  var(--red-dark)   !important;
 	--button-filled-brand-border:      none              !important;
+
+	--button-filled-white-background: var(--accent) !important;
+	--button-filled-white-background-hover: var(--accent-hover) !important;
+	--button-filled-white-text: var(--background) !important;
 
 	--button-filled-brand-background: var(--accent) !important;
 	--button-filled-brand-background-hover: var(--accent-hover) !important;
@@ -197,6 +201,8 @@
 	/* Some form of accent color. Appears in clickable text (Remove phone number | Reveal phone number) */
 	--brand-360: var(--accent) !important;
 	--brand-500: var(--accent-hover) !important;
+
+	--red-400: var(--red-dark) !important;
 
 
 	--__header-bar-background: var(--background-hard) !important;
@@ -451,6 +457,10 @@ svg > path {
 
 .custom-profile-theme .inner_c0bea0 {
 	background: var(--background-hard) !important
+}
+
+.visual-refresh .textBadge__2b1f5 {
+	color: var(--background-hard) !important
 }
 
 /* ======================== */
