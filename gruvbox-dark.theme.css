@@ -22,15 +22,20 @@
 	--background-1:     #3c3836;
 	--background-2:     #504945;
 	
-	--accent:            var(--yellow-dark);
-	--accent-hover:      var(--yellow-dark-custom);
+	--accent:           var(--yellow-dark);
+	--accent-hover:     var(--yellow-dark-custom);
 
+	--voice-room-animation-color:  var(--accent);
+	--voice-room-animation-dimmed: #51390c;
+
+	--foreground-hard:  #fbf1c7;
 	--foreground:       #ebdbb2;
 	--foreground-1:     #d5c4a1;
 	--foreground-2:     #bdae93;
 	--foreground-3:     #a89984;
 
-	--foregrond-inverted: var(--background);
+	--foreground-inverted: var(--background);
+	--foreground-muted:    var(--foreground-3);
 
 	--border: var(--background-2);
 
@@ -64,14 +69,16 @@
 	/* Friends > "Find or start conversation" */
 	/* Man, this var naming logic is crazy */
 	--input-placeholder-text: var(--foreground)      !important;
- 
-	--header-primary: var(--foreground-hard) !important;
 
+	--header-primary:   var(--foreground-hard)  !important;
+	--header-secondary: var(--foreground)       !important;
+	--header-muted:     var(--foreground-muted) !important;
+ 
 	/* Most of the buttons | Active tab background */
-	--button-secondary-background:        var(--accent)             !important;
-	--button-secondary-background-active: var(--accent)             !important;
-	--button-secondary-background-hover:  var(--accent-hover)       !important;
-	--button-secondary-text:              var(--foregrond-inverted) !important;
+	--button-secondary-background:        var(--accent)              !important;
+	--button-secondary-background-active: var(--accent)              !important;
+	--button-secondary-background-hover:  var(--accent-hover)        !important;
+	--button-secondary-text:              var(--foreground-inverted) !important;
 
 	--button-danger-background:        var(--red-light) !important;
 	--button-danger-background-active: var(--red-light) !important;
@@ -80,4 +87,56 @@
 
 	--bg-brand: var(--accent) !important;
 
+	/* New messages */
+	--text-brand: var(--accent) !important;
+
 }
+
+/* call container bg */
+[class^=callContainer],
+[class^=callContainer] [class^=scroller_] {
+  background-color: var(--background-hard);
+}
+
+/*
+   When you are the only in the voice room,
+   sometimes discord will suggest you to invite
+   friends / start activity in the form of 
+   user's modal window. This will change its background
+*/
+[class^=callContainer] [class^=root] {
+  background-color: black !important
+}
+
+/* New room preview animation */
+.gradientBackground__11664 {
+	background: var(--background-hard) !important
+}
+.backgroundDark__11664 {
+	background: var(--background-hard) !important
+}
+.foregroundRing__11664 {
+	background: var(--voice-room-animation-dimmed) !important
+}
+.foregroundBase__11664 {
+	background: var(--voice-room-animation-color) !important
+}
+
+/* Active call top gradient */
+/* [class^=callContainer] [class^=gradientTop] { */
+/*   background-image: linear-gradient( */
+/*     rgba(146, 131, 116, 1), */
+/*     rgba(146, 131, 116, 0.9) 10%, */
+/*     rgba(146, 131, 116, 0.8) 20%, */
+/*     rgba(146, 131, 116, 0.7) 30%, */
+/*     rgba(146, 131, 116, 0.6) 40%, */
+/*     rgba(146, 131, 116, 0.5) 50%, */
+/*     rgba(146, 131, 116, 0.4) 60%, */
+/*     rgba(146, 131, 116, 0.3) 70%, */
+/*     rgba(146, 131, 116, 0.2) 80%, */
+/*     rgba(146, 131, 116, 0.1) 90%, */
+/*     rgba(146, 131, 116, 0.05) 95%, */
+/*     rgba(146, 131, 116, 0.02) 98%, */
+/*     transparent */
+/*   ); */
+/* } */
