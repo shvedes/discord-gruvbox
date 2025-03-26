@@ -46,7 +46,8 @@
 	--foreground-inverted: var(--background);
 	--foreground-muted:    var(--foreground-3);
 
-	--border: var(--background-2);
+	/* --border: var(--background-2); */
+	--border: rgba( 86, 79, 75 , 1);
 
 	--icon-color: var(--foreground-2);
 	--icon-color-hover: var(--foreground-hard);
@@ -73,21 +74,26 @@
 
 	/* Left bottom active call */
 	--background-base-low: var(--background) !important;
-	/* Its header */
+
 	--background-surface-high: var(--background-1) !important;
+	--background-surface-higher: var(--background) !important;
+
+	--background-code: var(--background-hard) !important;
 
 	/* Chat */
 	--background-base-lower: var(--background) !important;
 
+	/* Remove / delete and so on actions */
+	--background-feedback-critical: rgba(204, 36, 29, 0.15) !important;
+
 	/* Pop-up windows */
 	--background-floating: var(--background-1) !important;
 	/* Self-explanatory */
-	/* --background-mentioned: var(--re) !important; */
-		/* --background-mentioned: var(--re) !important; */
 	--mention-background: var(--background-3) !important;
 
 	/* Some borders */
 	--background-modifier-accent: var(--border) !important;
+	--background-modifier-selected: var(--tab-active-background) !important;
 
 	/* Some buttons background (but not hover) | AKA sign */
 	--background-secondary: var(--background-1) !important;
@@ -103,7 +109,21 @@
 	--background-mentioned:       var(--background-1) !important;
 	--background-mentioned-hover: var(--background-2) !important;
 
-	--border-faint: var(--border) !important;
+	--border-faint:  var(--border) !important;
+	--border-normal: var(--border) !important;
+	--border-subtle: var(--border) !important;
+
+	--card-primary-bg: var(--background-soft) !important;
+
+	/* On-top notifications */
+	--custom-notice-background: var(--green-light) !important;
+	--custom-notice-text:       var(--foreground-inverted) !important;
+
+	--checkbox-border-default: var(--border) !important;
+	--checkbox-border-checked: var(--border) !important;
+	--checkbox-background-default: var(--background-soft) !important;
+	--checkbox-background-checked: var(--green-dark) !important;
+
 
 	/* Some (!) icons */
 	--icon-primary:   var(--icon-color)       !important;
@@ -119,20 +139,23 @@
 	/* Man, this var naming logic is crazy */
 	--input-placeholder-text: var(--foreground)      !important;
 
+	--interactive-active: var(--foreground-hard) !important;
+
 	--header-primary:   var(--foreground-hard)  !important;
 	--header-secondary: var(--foreground)       !important;
 	--header-muted:     var(--foreground-muted) !important;
  
 	/* Most of the buttons | Active tab background */
-	--button-secondary-background:        var(--accent)              !important;
-	--button-secondary-background-active: var(--accent)              !important;
-	--button-secondary-background-hover:  var(--accent-hover)        !important;
-	--button-secondary-text:              var(--foreground-inverted) !important;
-
-	--button-danger-background:        var(--red-light) !important;
-	--button-danger-background-active: var(--red-light) !important;
-	--button-danger-background-hover:  var(--red-dark)  !important;
-	--button-filled-brand-border:      none             !important;
+	--button-secondary-background:          var(--accent)              !important;
+	--button-secondary-background-active:   var(--accent)              !important;
+	--button-secondary-background-hover:    var(--accent-hover)        !important;
+	--button-secondary-background-disabled: var(--accent)              !important;
+	--button-secondary-text:                var(--foreground-inverted) !important;
+                                            
+	--button-danger-background:        var (--red-light) !important;
+	--button-danger-background-active: var(--red-light)  !important;
+	--button-danger-background-hover:  var(--red-dark)   !important;
+	--button-filled-brand-border:      none              !important;
 
 	--button-filled-brand-background: var(--accent) !important;
 	--button-filled-brand-background-hover: var(--accent-hover) !important;
@@ -140,11 +163,18 @@
 
 	/* Modal windows */
 	--modal-background: var(--background-primary) !important;
+	--modal-footer-background: var(--background) !important;
 
 	--bg-brand: var(--accent) !important;
 
-	/* New messages */
+	--scrollbar-auto-thumb: var(--background-2) !important;
+
 	--text-brand: var(--accent) !important;
+	--text-danger: var(--red-dark) !important;
+	--text-default: var(--foreground) !important;
+
+	--text-feedback-critical: var(--red-light) !important;
+	--text-feedback-positive: var(--green-light) !important;
 
 	/* Defalt chat text color */
 	--text-normal: var(--foreground) !important;
@@ -166,12 +196,17 @@
 
 	/* Some form of accent color. Appears in clickable text (Remove phone number | Reveal phone number) */
 	--brand-360: var(--accent) !important;
+	--brand-500: var(--accent-hover) !important;
 
 
 	--__header-bar-background: var(--background-hard) !important;
 
 	/* Message input box > emoji selector button color */
-	--interactive-normal: var(--icon-color) !important
+	--interactive-normal: var(--icon-color) !important;
+
+	--status-online:  var(--green-dark) !important;
+	--status-offline: var(--foreground-3) !important;
+	--status-idle:    var(--accent) !important;
 }
 
 /* call container bg */
@@ -339,6 +374,11 @@ svg > path {
 	color: var(--foreground) !important
 }
 
+/* Message input box border */
+:where(.visual-refresh) .channelTextArea__74017 {
+	border: 1px solid var(--border) !important
+}
+
 /* Top to bottom */
 /* Friends > Search box */
 /* Message input box */
@@ -370,4 +410,53 @@ svg > path {
 /* Completely remove quests banner */
 .theme-dark .wrapper__0d616 {
 	display: none !important
+}
+
+
+/* Context menus */
+:where(.visual-refresh) .scroller_c1e9c4 {
+	background: var(--background-1) !important
+}
+/* Its border */
+:where(.visual-refresh) .menu_c1e9c4 {
+	border: 1px solid var(--background-2) !important
+}
+
+/* Do not use background accent color for buttons: crisp ns, disconnect */
+.visual-refresh button.button__67645.enabled__67645:hover {
+	background-color: var(--background-1) !important
+}
+
+/* Screenshare modal main background (tested on vesktop only) */
+.visual-refresh .rootWithShadow__49fc1 {
+	background-color: var(--background-hard) !important
+}
+/* Screenshare modal button text color */
+.lookFilled__201d5 .contents__201d5 {
+	color: var(--foreground) !important
+}
+/* Screenshare "Go Live" button */
+:where(.visual-refresh) .lookFilled__201d5.colorBrand__201d5 {
+	background-color: var(--accent-hover) !important
+}
+:where(.visual-refresh) .lookFilled__201d5.colorBrand__201d5 .contents__201d5 {
+	color: var(--foreground-hard) !important;
+	font-size: 16px !important;
+	font-weight: bold !important;
+}
+
+[class*=checkbox_] svg > path {
+	fill: var(--background-soft) !important
+}
+
+.custom-profile-theme .inner_c0bea0 {
+	background: var(--background-hard) !important
+}
+
+/* ======================== */
+/* Code syntax highlighting */
+
+/* Line number & comments */
+.vc-shiki-table-cell {
+	color: var(--foreground-3) !important
 }
