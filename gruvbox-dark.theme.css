@@ -1,0 +1,83 @@
+/**
+ * @name Gruvbox Dark
+ * @description Gruvbox Dark for Discord (new UI update)
+ * @author shved
+ * @version 0.0.1
+*/
+
+* {
+
+	--yellow-dark:        #d79921;
+	--yellow-light:       #fabd2f;
+	--yellow-dark-custom: #bc861d;
+
+	--red-dark:         #cc241d;
+	--red-light:		#fb4934;
+
+	--background:		#282828;
+	--background-hard:	#1d2021;
+
+	--background-soft:  #32302f;
+
+	--background-1:     #3c3836;
+	--background-2:     #504945;
+	
+	--accent:            var(--yellow-dark);
+	--accent-hover:      var(--yellow-dark-custom);
+
+	--foreground:       #ebdbb2;
+	--foreground-1:     #d5c4a1;
+	--foreground-2:     #bdae93;
+	--foreground-3:     #a89984;
+
+	--foregrond-inverted: var(--background);
+
+	--border: var(--background-2);
+
+	--icon-color: var(--foreground-2);
+	--icon-color-muted: var(--foreground-3);
+
+	/* It is not primary actually */
+	/* Friends > Active Now background */
+	--background-primary: var(--background) !important; 
+
+	/* Some buttons background (but not hover) | AKA sign */
+	--background-secondary: var(--background-1) !important;
+	--background-tertiary:  var(--background-2) !important;
+	
+	/* Self-explanatory */
+	--background-message-hover: var(--background-soft) !important;
+
+	/* Self-explanatory */
+	--background-mentioned:       var(--background-1) !important;
+	--background-mentioned-hover: var(--background-2) !important;
+
+	/* Some (!) icons */
+	--icon-primary:   var(--icon-color)       !important;
+	--icon-secondary: var(--icon-color)       !important;
+	--icon-muted:     var(--icon-color-muted) !important;
+
+	/* Server > Members > Search */
+	--input-background:       var(--background-soft) !important;
+	--input-border:           var(--border)          !important;
+	
+	/* Friends > "Find or start conversation" */
+	/* Man, this var naming logic is crazy */
+	--input-placeholder-text: var(--foreground)      !important;
+ 
+	--header-primary: var(--foreground-hard) !important;
+
+	/* Most of the buttons | Active tab background */
+	--button-secondary-background:        var(--accent)             !important;
+	--button-secondary-background-active: var(--accent)             !important;
+	--button-secondary-background-hover:  var(--accent-hover)       !important;
+	--button-secondary-text:              var(--foregrond-inverted) !important;
+
+	--button-danger-background:        var(--red-light) !important;
+	--button-danger-background-active: var(--red-light) !important;
+	--button-danger-background-hover:  var(--red-dark)  !important;
+	--button-filled-brand-border:      none             !important;
+
+	--bg-brand: var(--accent) !important;
+
+}
