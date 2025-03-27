@@ -161,6 +161,7 @@
 	--text-secondary: rgba(var(--gruv-dark-fg1));   /* #d5c4a1 */
 	--text-tertiary: rgba(var(--gruv-dark-fg2));    /* #bdae93 */
 	--text-positive: rgba(var(--gruv-dark-green-dark));
+	--embed-title: rgba(var(--gruv-dark-text-hard));
 
 	--text-link: rgba(var(--gruv-dark-link-color));
 	--text-muted: rgba(var(--gruv-dark-text-muted));
@@ -333,6 +334,8 @@
 	--redesign-button-positive-background: rgba(var(--gruv-dark-green-dark));
 	--redesign-button-positive-pressed-background: rgba(var(--gruv-dark-green-dark), 0.8);
 	--redesign-button-positive-text: rgba(var(--gruv-dark-text-hard));
+	--redesign-button-overlay-alpha-text: rgba(var(--gruv-dark-text-hard));
+	--redesign-button-overlay-alpha-background: rgba(0, 0, 0, 0.3);
 }
 
 /* Invite button inside call box */
