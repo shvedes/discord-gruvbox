@@ -456,6 +456,15 @@
 	border-right: 1px solid rgba(var(--gruv-dark-border-default))
 }
 
+/* N new messages */
+.newMessagesBar__0f481 {
+	background-color: rgba(var(--gruv-dark-bg-soft));
+	color: rgba(var(--gruv-dark-text-primary))
+}
+.visual-refresh .barButtonAlt__0f481:hover {
+	background-color: transparent
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
