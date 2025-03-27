@@ -2,7 +2,7 @@
  * @name Gruvbox Dark
  * @description Gruvbox Dark for Discord (new UI update)
  * @author shved.
- * @version 1.0.0
+ * @version 0.0.1
  * @authorId 833767278969225266
  * @website https://github.com/shvedes/discord-gruvbox
 */
@@ -415,18 +415,20 @@
 	color: rgba(var(--gruv-dark-text-hard)) !important
 }
 
+/* Vesktop plugins / themes */
+.vc-addon-card {
+	border: 1px solid rgba(var(--gruv-dark-border-hover))
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
 
 /* Quests banner */
 /* Help & Inbox */
+/* Download button */
 .wrapper__0d616,
 .trailing_c38106 {
 	display: none !important
 }
 
-/* Vesktop plugins / themes */
-.vc-addon-card {
-	border: 1px solid rgba(var(--gruv-dark-border-hover))
-}
