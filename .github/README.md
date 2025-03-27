@@ -1,6 +1,6 @@
 # Gruvbox Dark For New Discord's UI Style
 
-The first most-completed Gruvbox Dark theme for Discord after them major UI update
+The first most-completed Gruvbox Dark theme for Discord after the major UI update
 
 ![img](./assets/preview-1.png)
 ![img](./assets/preview-2.png)
