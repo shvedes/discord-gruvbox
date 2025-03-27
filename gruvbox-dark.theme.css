@@ -100,7 +100,7 @@
 
 .visual-refresh.theme-dark,
 .visual-refresh .theme-dark,
-[class*=vc-membercount-total],
+[class*=vc-membercount-total], /* vesktop plugin */
 .visual-refresh,
 .theme-dark {
 	--__header-bar-background: rgba(var(--gruv-dark-bg-hard));
@@ -367,8 +367,14 @@
 	background-color: rgba(var(--gruv-dark-bg2)) !important
 }
 
-.theme-dark .experimentButton_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
+/* "Share your screen" button */
+.theme-dark [class*="experimentButton_"][class*="buttonColor_"][class*="buttonActive_"] {
 	background-color: rgba(var(--gruv-dark-green-dark), 0.2);
+	border: 1px solid rgba(var(--gruv-dark-green-dark), 0.25);
+}
+.theme-dark [class*="experimentButton_"][class*="buttonColor_"][class*="buttonActive_"]:hover {
+	background-color: rgba(var(--gruv-dark-green-dark), 0.4);
+	border: 1px solid rgba(var(--gruv-dark-green-dark), 0.3);
 }
 
 /* call container bg */
@@ -431,6 +437,15 @@
 .theme-dark .bannerGradient__955a3 {
 	background-color: rgba(var(--gruv-dark-bg));
 	border-bottom: 1px solid rgba(var(--gruv-dark-border-hover))
+}
+
+/* Share your screen / Stop stream / change windows / ets bototm button inside call window */
+[class*="colorable_"][class*="greenGlow_"] {
+	background-color: rgba(var(--gruv-dark-green-dark), 0.2);
+}
+[class*="colorable_"][class*="greenGlow_"]:hover,
+[class*="colorable_"][class*="greenGlow_"][class*="popoutOpen_"] {
+	background-color: rgba(var(--gruv-dark-green-dark), 0.4);
 }
 
 /* ==== Nuked elements ==== */
