@@ -1,8 +1,7 @@
 /**
  * @name Gruvbox Dark
  * @description Gruvbox Dark for Discord (new UI update)
- * @author shved.
- * @version 0.0.1
+ * @author shved. @version 0.0.1
  * @authorId 833767278969225266
  * @website https://github.com/shvedes/discord-gruvbox
 */
@@ -415,6 +414,29 @@
   fill: rgba(var(--gruv-dark-status-offline));
 }
 
+[class^=avatarWrapper_] {
+  [aria-label*=online i] svg > svg > rect {
+    fill: rgba(var(--gruv-dark-green-dark)) !important;
+  }
+}
+[class^=avatarWrapper_] {
+  [aria-label*=idle i] svg > svg > rect {
+    fill: rgba(var(--gruv-dark-orange-dark)) !important;
+  }
+}
+
+[class^=avatarWrapper_] {
+  [aria-label*=dnd i] svg > svg > rect {
+    fill: rgba(var(--gruv-dark-red-dark)) !important;
+  }
+}
+
+[class^=avatarWrapper_] {
+  [aria-label*=invisible i] svg > svg > rect {
+    fill: rgba(var(--gruv-dark-gray-light)) !important;
+  }
+}
+
 /* Screenshare icon */
 .icon_c9d15c > path {
 	fill: rgba(var(--gruv-dark-accent))
@@ -483,7 +505,6 @@
 
 /* Quests banner */
 /* Help & Inbox */
-/* Download button */
 .wrapper__0d616,
 .trailing_c38106 {
 	display: none !important
