@@ -420,6 +420,13 @@
 	border: 1px solid rgba(var(--gruv-dark-border-hover))
 }
 
+/* Use solid background for banners in the "Discover" category */
+.theme-dark .gradientOverlay_e9ef78,
+.theme-dark .bannerGradient__955a3 {
+	background-color: rgba(var(--gruv-dark-bg));
+	border-bottom: 1px solid rgba(var(--gruv-dark-border-hover))
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
