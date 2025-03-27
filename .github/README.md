@@ -2,8 +2,6 @@
 
 The first most-completed Gruvbox Dark theme for Discord after the major UI update
 
-<div align="center">
-
 <table border="1" style="border-color: #ebdbb2">
     <tr>
         <td><img src="./assets/preview-1.png" alt="Preview 1" width="200"></td>
@@ -18,5 +16,3 @@ The first most-completed Gruvbox Dark theme for Discord after the major UI updat
         <td><img src="./assets/preview-6.png" alt="Preview 6" width="200"></td>
     </tr>
 </table>
-
-</div>
