@@ -60,7 +60,7 @@
 
 	--gruv-dark-background-positive: var(--gruv-dark-green-dark);
 
-	--gruv-dark-accent: var(--gruv-dark-yellow-light);
+	--gruv-dark-accent: var(--gruv-dark-yellow-dark);
 	--gruv-dark-accent-hover: var(--gruv-dark-accent);
 
 	--gruv-dark-icon-color: var(--gruv-dark-fg2);
@@ -73,7 +73,7 @@
 	--gruv-dark-border-default: var(--gruv-dark-bg3);
 	--gruv-dark-border-hover: var(--gruv-dark-bg2);
 
-	--gruv-dark-button-color-default: var(--gruv-dark-yellow-dark);
+	--gruv-dark-button-color-default: var(--gruv-dark-accent);
 	--gruv-dark-button-color-hover:   rgba(var(--gruv-dark-button-color-default), 0.7);
 	--gruv-dark-button-text-default: var(--gruv-dark-bg);
 	--gruv-dark-button-text-dark: var(--gruv-dark-text-primary);
@@ -279,6 +279,9 @@
 
 	--info-danger-background: rgba(var(--gruv-dark-red-dark), 0.08);
 	--info-danger-text: rgba(rgba(gruv-dark-red-light));
+
+	--info-help-foreground: rgba(var(--gruv-dark-blue-light));
+	--info-help-background: rgba(var(--gruv-dark-blue-dark), 0.1);
 
 	--info-positive-background: rgba(var(--gruv-dark-green-dark), 0.08);
 	--info-positive-text: rgba(var(--gruv-dark-green-light));
