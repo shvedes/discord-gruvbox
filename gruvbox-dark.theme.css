@@ -297,7 +297,7 @@
 	--interactive-muted: rgba(var(--gruv-dark-bg3));
 
 	--message-reacted-text: rgba(var(--gruv-dark-text-hard));
-	--message-reacted-background: rgba(var(--gruv-dark-accent), 0.4);
+	--message-reacted-background: rgba(var(--gruv-dark-accent), 0.1);
 
 	--background-message-highlight: rgba(var(--gruv-dark-accent), 0.1);
 	--background-message-highlight-hover: rgba(var(--gruv-dark-accent), 0.15);
