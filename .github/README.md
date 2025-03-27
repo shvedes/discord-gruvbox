@@ -1,6 +1,6 @@
 # Gruvbox Dark For New Discord's UI Style
 
-<table border="1" style="border-color: #ebdbb2">
+<table border="1">
     <tr>
         <td><img src="./assets/preview-1.png" alt="Preview 1"></td>
         <td><img src="./assets/preview-2.png" alt="Preview 2"></td>
