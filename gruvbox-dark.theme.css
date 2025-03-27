@@ -98,12 +98,11 @@
 	--gruv-dark-status-dnd: var(--gruv-dark-red-dark);
 }
 
-/* .visual-refresh.theme-dark, */
-/* .visual-refresh .theme-dark, */
-/* [class*=vc-membercount-total], */
-/* .visual-refresh, */
-/* .theme-dark { */
-* {
+.visual-refresh.theme-dark,
+.visual-refresh .theme-dark,
+[class*=vc-membercount-total],
+.visual-refresh,
+.theme-dark {
 	--__header-bar-background: rgba(var(--gruv-dark-bg-hard));
 	--autocomplete-bg: rgba(var(--gruv-dark-bg));
 
@@ -141,7 +140,6 @@
 	
 	--bg-surface-overlay: rgba(var(--gruv-dark-bg));
 
-	/* Please check this afterwards */
 	--card-primary-bg:  rgba(var(--gruv-dark-bg-hard));
 
 	--bg-brand: rgba(var(--gruv-dark-accent), 0.8);
