@@ -229,7 +229,7 @@
     --button-filled-brand-background-hover: var(--gruv-dark-button-color-hover);
 
 	--button-danger-background:          rgba(var(--gruv-dark-red-dark));
-	--button-danger-background-active:   white;
+	--button-danger-background-active:   rgba(var(--gruv-dark-red-light));
 	--button-danger-background-disabled: rgba(var(--gruv-dark-red-dark), 0.8);
 	--button-danger-background-hover:    rgba(var(--gruv-dark-red-dark), 0.7);
 	--button-danger-border: rgba(var(--gruv-dark-red-dark));
