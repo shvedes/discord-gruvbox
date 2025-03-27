@@ -241,6 +241,8 @@
 	--button-outline-danger-text: rgba(var(--gruv-dark-button-text-dark-muted));
 	--button-outline-danger-text-hover: rgba(var(--gruv-dark-text-danger));
 
+	--button-outline-positive-text: rgba(var(--gruv-dark-text-primary));
+
 	--button-positive-background: rgba(var(--gruv-dark-button-positive-default));
 	--button-positive-background-hover: var(--gruv-dark-button-positive-hover);
 	--button-positive-border: rgba(var(--gruv-dark-button-positive-default));
@@ -396,31 +398,30 @@
 	background: rgba(var(--gruv-dark-accent-hover), 1) !important
 }
 
-[mask="url(#svg-mask-status-online)"] {
+/* Online statuses */
+[mask^="url(#svg-mask-status-online"] {
   fill: rgba(var(--gruv-dark-status-online));
 }
 
-[mask="url(#svg-mask-status-dnd)"] {
+[mask^="url(#svg-mask-status-dnd"] {
   fill: rgba(var(--gruv-dark-status-dnd));
 }
 
-[mask="url(#svg-mask-status-idle)"] {
+[mask^="url(#svg-mask-status-idle"] {
   fill: var(--gruv-dark-status-idle);
 }
 
-[mask="url(#svg-mask-status-offline)"] {
+[mask^="url(#svg-mask-status-offline"] {
   fill: rgba(var(--gruv-dark-status-offline));
 }
 
+/* Screenshare icon */
+.icon_c9d15c > path {
+	fill: rgba(var(--gruv-dark-accent))
+}
 
-/*
-   When you are the only in the voice room,
-   sometimes discord will suggest you to invite
-   friends / start activity in the form of 
-   user's modal window. This will change its background
-*/
 [class^=callContainer] [class^=root] {
-  background-color: black !important
+  background-color: rgba(var(--gruv-dark-bg-hard)) !important
 }
 
 .flex__7c0ba .lineClamp1__4bd52 {
@@ -463,10 +464,16 @@
 }
 
 /* Open voice button */
-.custom-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94 {
+/* .custom-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94 { */
+/* 	background-color: rgba(var(--gruv-dark-button-alt-default)) */
+/* } */
+/* .custom-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94:hover { */
+/* 	background-color: rgba(var(--gruv-dark-button-alt-hover)) */
+/* } */
+.custom-profile-theme.theme-dark [class*=themeColor i][class*=secondary i] {
 	background-color: rgba(var(--gruv-dark-button-alt-default))
 }
-.custom-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94:hover {
+.custom-profile-theme.theme-dark [class*=themeColor i][class*=secondary i]:hover {
 	background-color: rgba(var(--gruv-dark-button-alt-hover))
 }
 
