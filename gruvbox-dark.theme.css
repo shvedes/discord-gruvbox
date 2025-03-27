@@ -70,8 +70,8 @@
 
 	--gruv-dark-link-color: var(--gruv-dark-blue-light);
 
-	--gruv-dark-border-default: var(--gruv-dark-bg3);
-	--gruv-dark-border-hover: var(--gruv-dark-bg2);
+	--gruv-dark-border-default: var(--gruv-dark-bg2);
+	--gruv-dark-border-hover: var(--gruv-dark-bg3);
 
 	--gruv-dark-button-color-default: var(--gruv-dark-accent);
 	--gruv-dark-button-color-hover:   rgba(var(--gruv-dark-button-color-default), 0.7);
@@ -123,7 +123,7 @@
 	--background-feedback-critical: rgba(var(--gruv-dark-red-dark), 0.08);
 	--background-feedback-positive: rgba(var(--gruv-dark-green-dark), 0.08);
 
-	--background-modifier-accent: rgba(var(--gruv-dark-border-hover));
+	--background-modifier-accent: rgba(var(--gruv-dark-border-default));
 	--background-modifier-selected: rgba(var(--gruv-dark-selected-tab));
 
 	--background-mentioned: rgba(var(--gruv-dark-accent), 0.1);
@@ -148,10 +148,10 @@
 	--bg-mod-strong: rgba(var(--gruv-dark-bg2));
 	--bg-mod-subtle: rgba(var(--gruv-dark-bg1));
 
-	--border-normal: rgba(var(--gruv-dark-border-hover));
+	--border-normal: rgba(var(--gruv-dark-border-default));
 	--border-strong: rgba(var(--gruv-dark-border-default));
-	--border-faint:  rgba(var(--gruv-dark-border-hover));
-	--border-subtle: rgba(var(--gruv-dark-border-hover));
+	--border-faint:  rgba(var(--gruv-dark-border-default));
+	--border-subtle: rgba(var(--gruv-dark-border-default));
 
 	--background-message-hover: rgba(var(--gruv-dark-bg1));
 
@@ -237,7 +237,7 @@
 	--button-outline-danger-background: rgba(var(--gruv-dark-button-alt-default));
 	--button-outline-danger-background-hover: rgba(var(--gruv-dark-button-alt-hover));
 	--button-outline-danger-border: rgba(var(--gruv-dark-border-default));
-	--button-outline-danger-border-hover: rgba(var(--gruv-dark-border-hover));
+	--button-outline-danger-border-hover: rgba(var(--gruv-dark-border-default));
 	--button-outline-danger-text: rgba(var(--gruv-dark-button-text-dark-muted));
 	--button-outline-danger-text-hover: rgba(var(--gruv-dark-text-danger));
 
@@ -315,7 +315,7 @@
 
 	--spine-default: rgba(var(--gruv-dark-bg4));
 
-	--app-border-frame: rgba(var(--gruv-dark-border-hover));
+	--app-border-frame: rgba(var(--gruv-dark-border-default));
 	
 	--twitch: rgba(var(--gruv-dark-purple-dark));
 
@@ -432,7 +432,7 @@
 
 /* Vesktop plugins / themes */
 .vc-addon-card {
-	border: 1px solid rgba(var(--gruv-dark-border-hover))
+	border: 1px solid rgba(var(--gruv-dark-border-default))
 }
 
 /* Use solid background for banners in the "Discover" category */
@@ -449,6 +449,11 @@
 [class*="colorable_"][class*="greenGlow_"]:hover,
 [class*="colorable_"][class*="greenGlow_"][class*="popoutOpen_"] {
 	background-color: rgba(var(--gruv-dark-green-dark), 0.4);
+}
+
+/* Add right border for left section */
+.visual-refresh .sidebarList_c48ade {
+	border-right: 1px solid rgba(var(--gruv-dark-border-default))
 }
 
 /* ==== Nuked elements ==== */
