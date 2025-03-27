@@ -98,11 +98,12 @@
 	--gruv-dark-status-dnd: var(--gruv-dark-red-dark);
 }
 
-.visual-refresh.theme-dark,
-.visual-refresh .theme-dark,
-[class*=vc-membercount-total],
-.visual-refresh,
-.theme-dark {
+/* .visual-refresh.theme-dark, */
+/* .visual-refresh .theme-dark, */
+/* [class*=vc-membercount-total], */
+/* .visual-refresh, */
+/* .theme-dark { */
+* {
 	--__header-bar-background: rgba(var(--gruv-dark-bg-hard));
 	--autocomplete-bg: rgba(var(--gruv-dark-bg));
 
@@ -190,13 +191,13 @@
 	--channels-default: rgba(var(--gruv-dark-fg3));
 
 	--custom-notice-background: rgba(var(--gruv-dark-green-dark));
-	--custom-notice-text: rgba(var(--gruv-dark-text-inverted-hard));
+	--custom-notice-text: rgba(var(--gruv-dark-text-hard));
 
 	--notice-background-positive: rgba(var(--gruv-dark-green-dark));
 	--notice-background-warning: rgba(var(--gruv-dark-yellow-dark), 0.8);
 	--notice-background-critical: rgba(var(--gruv-dark-red-dark));
 
-	--notice-text-positive: rgba(var(--gruv-dark-text-hard));
+	--notice-text-positive: rgba(var(--gruv-dark-text-inverted-hard));
 
 	--link-color: rgba(var(--gruv-dark-blue-dark));
 
@@ -316,6 +317,7 @@
 	
 	--twitch: rgba(var(--gruv-dark-purple-dark));
 
+	--brand-260: rgba(var(--gruv-dark-accent-hover), 0.8);
 	--brand-360: rgba(var(--gruv-dark-accent));
 	--brand-500: rgba(var(--gruv-dark-accent-hover), 0.8);
 	--brand-05: rgba(var(--gruv-dark-accent-hover), 0.2);
@@ -326,6 +328,9 @@
 	--color-total: rgba(var(--gruv-dark-text-muted));
 	--primary-300: rgba(var(--gruv-dark-text-hard));
 	--primary-500: rgba(var(--gruv-dark-bg1));
+
+	--badge-brand-text: rgba(var(--gruv-dark-text-inverted));
+	--badge-brand-bg: rgba(var(--gruv-dark-accent-hover), 0.8);
 
 	--redesign-button-positive-background: rgba(var(--gruv-dark-green-dark));
 	--redesign-button-positive-pressed-background: rgba(var(--gruv-dark-green-dark), 0.8);
