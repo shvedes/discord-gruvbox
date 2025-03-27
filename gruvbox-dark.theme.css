@@ -309,15 +309,12 @@
 	--spoiler-hidden-background-hover: rgba(var(--gruv-dark-bg3));
 
 	--chat-background-default: rgba(var(--gruv-dark-bg-soft));
-
 	--premium-nitro-pink-text: rgba(var(--gruv-dark-purple-light));
 	--guild-boosting-pink: rgba(var(--gruv-dark-purple-light));
-
 	--spine-default: rgba(var(--gruv-dark-bg4));
-
 	--app-border-frame: rgba(var(--gruv-dark-border-default));
-	
 	--twitch: rgba(var(--gruv-dark-purple-dark));
+	--opacity-blurple-12: rgba(var(--gruv-dark-bg));
 
 	--brand-260: rgba(var(--gruv-dark-accent-hover), 0.8);
 	--brand-360: rgba(var(--gruv-dark-accent));
@@ -463,6 +460,14 @@
 }
 .visual-refresh .barButtonAlt__0f481:hover {
 	background-color: transparent
+}
+
+/* Open voice button */
+.custom-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94 {
+	background-color: rgba(var(--gruv-dark-button-alt-default))
+}
+.custom-profile-theme.theme-dark .themeColor_fb7f94.secondary_fb7f94:hover {
+	background-color: rgba(var(--gruv-dark-button-alt-hover))
 }
 
 /* ==== Nuked elements ==== */
