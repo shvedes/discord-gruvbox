@@ -1,5 +1,7 @@
 # Gruvbox Dark For New Discord's UI Style
 
+The first Gruvbox Dark theme for Discord after the major UI update
+
 <table border="1">
     <tr>
         <td><img src="./assets/preview-1.png" alt="Preview 1"></td>
@@ -15,4 +17,8 @@
     </tr>
 </table>
 
-The first most-completed Gruvbox Dark theme for Discord after the major UI update
+## Installation
+
+```bash
+curl -s curl -s "https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/install.sh" | bash
+```
