@@ -20,5 +20,5 @@ The first Gruvbox Dark theme for Discord after the major UI update
 ## Installation
 
 ```bash
-curl -s curl -s "https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/install.sh" | bash
+curl -s "https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/install.sh" | bash
 ```
