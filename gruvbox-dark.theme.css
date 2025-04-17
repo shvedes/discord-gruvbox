@@ -245,6 +245,7 @@
 
 	--button-positive-background: rgba(var(--gruv-dark-button-positive-default));
 	--button-positive-background-hover: var(--gruv-dark-button-positive-hover);
+	--button-positive-background-active: rgba(var(--gruv-dark-button-positive-default));
 	--button-positive-border: rgba(var(--gruv-dark-button-positive-default));
 
 	--button-secondary-background: rgba(var(--gruv-dark-bg-soft));
@@ -317,6 +318,23 @@
 	--app-border-frame: rgba(var(--gruv-dark-border-default));
 	--twitch: rgba(var(--gruv-dark-purple-dark));
 	--opacity-blurple-12: rgba(var(--gruv-dark-bg));
+
+	--custom-store-colors-premium-gradient: linear-gradient(90deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)));
+	--custom-premium-colors-premium-gradient-tier-0: linear-gradient(90deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)));
+	--custom-premium-colors-premium-gradient-tier-1: linear-gradient(90deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)));
+	--custom-premium-colors-premium-gradient-tier-2: linear-gradient(90deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)));
+	--custom-premium-colors-premium-gradient-tier-2-transparent: linear-gradient(90deg, rgba(var(--gruv-dark-purple-dark), 0.3), rgba(var(--gruv-dark-purple-light), 0.3));
+	--custom-premium-colors-premium-gradient-tier-2-diagonal: linear-gradient(45deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)));
+	--custom-premium-colors-premium-gradient-tier-2-tri-color: linear-gradient(90deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)), rgba(var(--gruv-dark-purple-dark)));
+	--custom-premium-colors-premium-gradient-tier-2-tri-color-reverse: linear-gradient(90deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)), rgba(var(--gruv-dark-purple-dark)));
+	--custom-premium-colors-premium-gradient-tier-2-tri-color-vertical: linear-gradient(0deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)), rgba(var(--gruv-dark-purple-dark)));
+	--custom-premium-colors-premium-gradient-tier-2-old: linear-gradient(90deg, rgba(var(--gruv-dark-purple-dark)), rgba(var(--gruv-dark-purple-light)));
+
+	--premium-nitro-pink-dark: rgba(var(--gruv-dark-purple-dark));
+	--premium-nitro-pink-light: rgba(var(--gruv-dark-purple-light));
+	--premium-perk-blue: rgba(var(--gruv-dark-blue-dark));
+	--premium-perk-blue-alt: rgba(var(--gruv-dark-blue-dark));
+	--premium-perk-dark-blue: rgba(var(--gruv-dark-blue-dark));
 
 	--brand-260: rgba(var(--gruv-dark-accent-hover), 0.8);
 	--brand-360: rgba(var(--gruv-dark-accent));
@@ -417,24 +435,24 @@
 
 [class^=avatarWrapper_] {
   [aria-label*=online i] svg > svg > rect {
-    fill: rgba(var(--gruv-dark-green-dark)) !important;
+    fill: rgba(var(--gruv-dark-status-online)) !important;
   }
 }
 [class^=avatarWrapper_] {
   [aria-label*=idle i] svg > svg > rect {
-    fill: rgba(var(--gruv-dark-orange-dark)) !important;
+    fill: rgba(var(--gruv-dark-status-idle)) !important;
   }
 }
 
 [class^=avatarWrapper_] {
   [aria-label*=dnd i] svg > svg > rect {
-    fill: rgba(var(--gruv-dark-red-dark)) !important;
+    fill: rgba(var(--gruv-dark-status-dnd)) !important;
   }
 }
 
 [class^=avatarWrapper_] {
   [aria-label*=invisible i] svg > svg > rect {
-    fill: rgba(var(--gruv-dark-gray-light)) !important;
+    fill: rgba(var(--gruv-dark-status-offline)) !important;
   }
 }
 
@@ -500,14 +518,27 @@
 	background-color: rgba(var(--gruv-dark-button-alt-hover))
 }
 
+.visual-refresh .section__00943 {
+	background-color: rgba(var(--gruv-dark-bg))
+}
+
+:where(.visual-refresh) .lookFilled__201d5.colorPrimary__201d5,
+:where(.visual-refresh) .medium_a45028 .inner_a45028 {
+	background-color: rgba(var(--gruv-dark-bg))
+}
+
+.menuOverlay_af7fb7,
+.card__39ec2 {
+	background-color: rgba(var(--gruv-dark-bg))
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
 
 /* Quests banner */
 /* Help & Inbox */
-.wrapper__0d616,
-.trailing_c38106 {
+.wrapper__0d616 {
 	display: none !important
 }
 
