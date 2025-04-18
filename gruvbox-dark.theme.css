@@ -540,6 +540,10 @@
     background-color: rgba(var(--gruv-dark-bg1));
 }
 
+.overlay_c0bea0 {
+    background-color: rgba(var(--gruv-dark-bg));
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
