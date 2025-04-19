@@ -386,6 +386,9 @@
 .container__87bf1 {
 	background-color: rgba(var(--gruv-dark-bg2)) !important
 }
+.checked__87bf1 {
+    background-color: rgba(var(--gruv-dark-yellow-dark)) !important;
+}
 
 /* "Share your screen" button */
 .theme-dark [class*="experimentButton_"][class*="buttonColor_"][class*="buttonActive_"] {
