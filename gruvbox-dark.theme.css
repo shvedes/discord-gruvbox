@@ -532,6 +532,18 @@
 	background-color: rgba(var(--gruv-dark-bg))
 }
 
+/* Background tweaks to fix Discord's inconsistent syling */
+
+.connection_c7f964,
+.connectContainer_c7f964,
+.appDetailsContainer__50a54 {
+    background-color: rgba(var(--gruv-dark-bg1));
+}
+
+.overlay_c0bea0 {
+    background-color: rgba(var(--gruv-dark-bg));
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
