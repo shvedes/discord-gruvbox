@@ -161,6 +161,8 @@
 	--text-secondary: rgba(var(--gruv-dark-fg1));   /* #d5c4a1 */
 	--text-tertiary: rgba(var(--gruv-dark-fg2));    /* #bdae93 */
 	--text-positive: rgba(var(--gruv-dark-green-dark));
+
+	--chat-text-muted: var(--text-tertiary);
 	--embed-title: rgba(var(--gruv-dark-text-hard));
 
 	--text-link: rgba(var(--gruv-dark-link-color));
@@ -535,12 +537,13 @@
 	background-color: rgba(var(--gruv-dark-bg))
 }
 
-/* Background tweaks to fix Discord's inconsistent syling */
+/* Background tweaks to fix Discord's inconsistent styling */
 
 .connection_c7f964,
 .connectContainer_c7f964,
 .appDetailsContainer__50a54 {
-    background-color: rgba(var(--gruv-dark-bg1));
+    background-color: rgba(var(--gruv-dark-bg-soft));
+	border: 1px solid rgba(var(--gruv-dark-border-default))
 }
 
 .overlay_c0bea0 {
@@ -552,12 +555,24 @@
     content: normal;
 }
 
+/* Contrast for some action buttons was too high, so.. */
+/* To see changes: Settings > Authorized Apps */
+
+[class^="actionMenuButton_"] {
+	background-color: rgba(var(--gruv-dark-bg-soft));
+	border: 1px solid rgba(var(--gruv-dark-border-default));
+	border-radius: 12px
+}
+[class^="actionMenuButton_"]:hover {
+	background-color: rgba(var(--gruv-dark-bg));
+	border: 1px solid rgba(var(--gruv-dark-border-hover));
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
 
 /* Quests banner */
-/* Help & Inbox */
 .wrapper__0d616 {
 	display: none !important
 }
