@@ -547,6 +547,11 @@
     background-color: rgba(var(--gruv-dark-bg));
 }
 
+/* Hovering over gifs would cause them to go blank  */
+.result__2dc39:after {
+    content: normal;
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
