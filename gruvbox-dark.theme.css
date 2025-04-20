@@ -96,6 +96,10 @@
 	--gruv-dark-status-offline: var(--gruv-dark-text-muted);
 	--gruv-dark-status-idle: rgba(var(--gruv-dark-accent), 0.8);
 	--gruv-dark-status-dnd: var(--gruv-dark-red-dark);
+
+	--vc-spotify-green: rgba(var(--gruv-dark-green-dark));
+	--vc-spotify-green-90: rgba(var(--gruv-dark-green-dark), 0.2);
+	--vc-spotify-green-80: rgba(var(--gruv-dark-green-dark), 0.3);
 }
 
 .visual-refresh.theme-dark,
@@ -566,6 +570,10 @@
 [class^="actionMenuButton_"]:hover {
 	background-color: rgba(var(--gruv-dark-bg));
 	border: 1px solid rgba(var(--gruv-dark-border-hover));
+}
+
+.visual-refresh .searchBar__35e86 {
+	border: none !important
 }
 
 /* ==== Nuked elements ==== */
