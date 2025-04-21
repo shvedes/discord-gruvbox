@@ -362,6 +362,8 @@
 	--redesign-button-positive-text: rgba(var(--gruv-dark-text-hard));
 	--redesign-button-overlay-alpha-text: rgba(var(--gruv-dark-text-hard));
 	--redesign-button-overlay-alpha-background: rgba(0, 0, 0, 0.3);
+
+	--user-profile-overlay-background: rgba(var(--gruv-dark-bg));
 }
 
 /* Invite button inside call box */
@@ -548,10 +550,6 @@
 .appDetailsContainer__50a54 {
     background-color: rgba(var(--gruv-dark-bg-soft));
 	border: 1px solid rgba(var(--gruv-dark-border-default))
-}
-
-.overlay_c0bea0 {
-    background-color: rgba(var(--gruv-dark-bg));
 }
 
 /* Hovering over gifs would cause them to go blank  */
