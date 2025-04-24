@@ -574,6 +574,22 @@
 	border: none !important
 }
 
+/* Add border to account overview */
+/* Settings > My Account */
+[class^=accountProfileCard__] {
+	border: 1px solid rgba(var(--gruv-dark-border-default));
+}
+
+[class^=accountProfileCard__] {
+	box-shadow: 0 0 10px black !important
+}
+
+.visual-refresh [class*=box_],
+[class*=appDetailsContainer],
+[class*=connectionOptionsWrapper] {
+	background-color: var(--background-base-low) !important
+}
+
 /* ==== Nuked elements ==== */
 
 /* Top to bottom */
