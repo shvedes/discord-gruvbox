@@ -363,7 +363,7 @@
 	--redesign-button-overlay-alpha-text: rgba(var(--gruv-dark-text-hard));
 	--redesign-button-overlay-alpha-background: rgba(0, 0, 0, 0.3);
 
-	--user-profile-overlay-background: rgba(var(--gruv-dark-bg));
+	--user-profile-overlay-background: rgba(var(--gruv-dark-bg-hard));
 }
 
 /* Invite button inside call box */
