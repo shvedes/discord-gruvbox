@@ -493,11 +493,11 @@
 }
 
 /* Share your screen / Stop stream / change windows / ets bototm button inside call window */
-[class*="colorable_"][class*="greenGlow_"] {
+[class^="colorable_"][class*="greenGlow_"] {
 	background-color: rgba(var(--gruv-dark-green-dark), 0.2);
 }
-[class*="colorable_"][class*="greenGlow_"]:hover,
-[class*="colorable_"][class*="greenGlow_"][class*="popoutOpen_"] {
+[class^="colorable_"][class*="greenGlow_"]:hover,
+[class^="colorable_"][class*="greenGlow_"][class*="popoutOpen_"] {
 	background-color: rgba(var(--gruv-dark-green-dark), 0.4);
 }
 
@@ -584,10 +584,20 @@
 	box-shadow: 0 0 10px black !important
 }
 
-.visual-refresh [class*=box_],
-[class*=appDetailsContainer],
-[class*=connectionOptionsWrapper] {
+.visual-refresh [class^=box_],
+[class^=appDetailsContainer],
+[class^=connectionOptionsWrapper] {
 	background-color: var(--background-base-low) !important
+}
+
+/* Make all titlebars the same */
+.visual-refresh .title_f75fb {
+	background-color: rgba(var(--gruv-dark-bg-hard)) !important
+}
+
+/* Remove bottom border for server title section */
+.visual-refresh [class^=header_] {
+	border-bottom: none !important
 }
 
 /* ==== Nuked elements ==== */
