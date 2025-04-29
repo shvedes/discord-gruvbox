@@ -552,6 +552,15 @@
 	border: 1px solid rgba(var(--gruv-dark-border-default))
 }
 
+.background__1fed1,
+.background__1fed1 > .fieldList__1fed1 {
+    background-color: var(--user-profile-overlay-background);
+}
+
+.badgeList__1fed1 {
+    background-color: transparent;
+}
+
 /* Hovering over gifs would cause them to go blank  */
 .result__2dc39:after {
     content: normal;
