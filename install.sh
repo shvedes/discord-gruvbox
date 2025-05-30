@@ -1,14 +1,32 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-output_dir="$HOME/.config/vesktop/themes"
-output_file="$output_dir/gruvbox-dark.theme.css"
+file_name="gruvbox-dark.theme.css"
+url="https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/$file_name"
 
-if [ ! -d "$output_dir" ]; then
-	mkdir -p "$output_dir"
-fi
+path_vesktop="$HOME/.config/vesktop/themes"
+path_vencord="$HOME/.config/Vencord/themes"
 
-if curl -s "https://raw.githubusercontent.com/shvedes/discord-gruvbox/refs/heads/main/gruvbox-dark.theme.css" -o "$output_file"; then
-	echo "Done"
+has_vesktop=$(command -v vesktop)
+has_discord=$(command -v discord)
+
+targets=()
+
+if [ -n "$has_vesktop" ] && [ -n "$has_discord" ]; then
+    targets+=("$path_vesktop" "$path_vencord")
+elif [ -n "$has_vesktop" ]; then
+    targets+=("$path_vesktop")
+elif [ -n "$has_discord" ]; then
+    targets+=("$path_vencord")
 else
-	echo "Something went wrong"
+    echo "Neither vesktop nor vencord is installed. Exiting."
+    exit 1
 fi
+
+for dir in "${targets[@]}"; do
+    mkdir -p "$dir"
+    if curl -s "$url" -o "$dir/$file_name"; then
+        echo "Installed to: $dir"
+    else
+        echo "Failed to download to: $dir"
+    fi
+done
