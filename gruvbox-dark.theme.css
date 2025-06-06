@@ -366,6 +366,10 @@
 	--user-profile-overlay-background: rgba(var(--gruv-dark-bg));
 }
 
+.visual-refresh .textBadge__2b1f5 {
+	color: rgb(var(--gruv-dark-text-inverted)) !important
+}
+
 /* Invite button inside call box */
 .buttonColor__7b3e8 {
 	color: rgba(var(--gruv-dark-text-primary))
