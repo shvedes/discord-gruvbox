@@ -252,6 +252,7 @@
 	--button-positive-background: rgba(var(--gruv-dark-button-positive-default));
 	--button-positive-background-hover: var(--gruv-dark-button-positive-hover);
 	--button-positive-background-active: rgba(var(--gruv-dark-button-positive-default));
+	--button-positive-background-disabled: rgba(var(--gruv-dark-green-dark));
 	--button-positive-border: rgba(var(--gruv-dark-button-positive-default));
 
 	--button-secondary-background: rgba(var(--gruv-dark-bg-soft));
@@ -353,6 +354,7 @@
 	--color-total: rgba(var(--gruv-dark-text-muted));
 	--primary-300: rgba(var(--gruv-dark-text-hard));
 	--primary-500: rgba(var(--gruv-dark-bg1));
+	--white: rgba(var(--gruv-dark-text-hard));
 
 	--badge-brand-text: rgba(var(--gruv-dark-text-inverted));
 	--badge-brand-bg: rgba(var(--gruv-dark-accent-hover), 0.8);
