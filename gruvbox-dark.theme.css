@@ -596,6 +596,10 @@
 }
 
 [class^=accountProfileCard__] {
+	box-shadow: 0 0 5px black !important
+}
+
+[class^=accountProfileCard__]:hover {
 	box-shadow: 0 0 10px black !important
 }
 
