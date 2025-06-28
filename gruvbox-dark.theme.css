@@ -489,6 +489,10 @@ rect[fill="#82838b"] {
     fill: var(--status-offline);
 }
 
+div.status_a423bd {
+    background-color: var(--status-online) !important;
+}
+
 /* Screenshare icon */
 .icon_c9d15c > path {
 	fill: rgba(var(--gruv-dark-accent))
