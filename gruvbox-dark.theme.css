@@ -473,6 +473,22 @@
   }
 }
 
+rect[fill="#43a25a"] {
+    fill: var(--status-online);
+}
+
+rect[fill="#ca9654"] {
+    fill: var(--status-idle);
+}
+
+rect[fill="#d83a42"] {
+    fill: var(--status-dnd);
+}
+
+rect[fill="#82838b"] {
+    fill: var(--status-offline);
+}
+
 /* Screenshare icon */
 .icon_c9d15c > path {
 	fill: rgba(var(--gruv-dark-accent))
