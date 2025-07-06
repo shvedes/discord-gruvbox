@@ -377,6 +377,13 @@
 	color: rgba(var(--gruv-dark-text-primary))
 }
 
+.theme-dark .button_e131a9.buttonColor_e131a9.buttonActive_e131a9 {
+	background-color: rgba(var(--gruv-dark-button-positive-default), 0.1)
+}
+.theme-dark .button_e131a9.buttonColor_e131a9.buttonActive_e131a9:hover {
+	background-color: rgba(var(--gruv-dark-button-positive-default), 0.2)
+}
+
 /* Input / Output Volume slider (context menu) */
 :where(.visual-refresh) .mini_a562c8 .grabber_a562c8, :where(.visual-refresh) .slider_a562c8 .grabber_a562c8  {
 	background-color: rgba(var(--gruv-dark-text-primary))
