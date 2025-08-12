@@ -60,8 +60,8 @@
 
 	--gruv-dark-background-positive: var(--gruv-dark-green-dark);
 
-	--gruv-dark-accent: var(--gruv-dark-yellow-dark);
-	--gruv-dark-accent-hover: var(--gruv-dark-accent);
+	--gruv-dark-accent: var(--gruv-dark-green-light);
+	--gruv-dark-accent-hover: var(--gruv-dark-green-dark);
 
 	--gruv-dark-icon-color: var(--gruv-dark-fg2);
 	--gruv-dark-icon-color-hover: var(--gruv-dark-fg);
