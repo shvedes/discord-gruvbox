@@ -366,6 +366,18 @@
 	--redesign-button-overlay-alpha-background: rgba(0, 0, 0, 0.3);
 
 	--user-profile-overlay-background: rgba(var(--gruv-dark-bg));
+
+	/* hasty fix for new update*/
+	--text-strong: var(--text-primary);
+	--icon-strong: var(--text-strong);
+	--interactive-text-hover: var(--text-strong);
+	--interactive-text-active: var(--text-strong);
+    --interactive-text-default: var(--text-normal);
+	--icon-subtle: var(--text-strong);
+	--mobile-text-heading-primary: var(--text-strong);
+	--control-secondary-text-default: var(--text-secondary);
+	--control-secondary-text-hover: var(--text-secondary);
+	--text-subtle: var(--text-muted);
 }
 
 .visual-refresh .textBadge__2b1f5 {
